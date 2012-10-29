@@ -8,6 +8,7 @@
   %body
     #navbar
       = link_to "Home", root_path
+      = link_to "Reminders", reminders_path
       - if user_signed_in?
         = link_to "Sign Out", destroy_user_session_path, method: :delete
       - else

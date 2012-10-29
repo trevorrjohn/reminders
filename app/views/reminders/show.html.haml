@@ -1,0 +1,7 @@
+%p Description: #{@reminder.description}
+%p Location: #{@reminder.location}
+%p Date: #{@reminder.date.strftime("%m/%d/%Y")}
+.links
+  = link_to 'Edit', edit_reminder_path(@reminder)
+  \|
+  = link_to 'Back', reminders_path
