@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+gem 'devise'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'pg'
@@ -17,4 +18,9 @@ group :test, :development do
   gem 'factory_girl_rails'
   gem 'pry'
   gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara-webkit'
+  gem 'shoulda'
 end
